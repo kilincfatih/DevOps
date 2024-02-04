@@ -8,8 +8,8 @@ WORKDIR /app
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# app.py içerisinde ki kodları kopyalayalım
+# app.py dosyamızda ki içerisinde ki kodları kopyalayalım
 COPY . .
 
-# Uygulamayı çalıştırın
+# Uygulamayı çalıştıralım
 CMD ["python", "./app.py"]
